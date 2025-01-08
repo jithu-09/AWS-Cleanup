@@ -24,6 +24,56 @@ root/
 ├── README.md                # Documentation
 ```
 
+## **Setup Instructions**
+
+### **Step 1: Configure Gmail**
+
+1. Log in to your Gmail account.
+2. Create a filter:
+   - Search for emails containing subjects like `AWS Free Tier limit alert`.
+   - Apply the label: **AWS Free Tier limit alert**.
+3. Ensure AWS alert emails are correctly tagged with this label.
+
+---
+
+### **Step 2: Set Up Google Apps Script**
+
+1. Go to [Google Apps Script](https://script.google.com/).
+2. Create a new project and paste the script provided in the repository.
+3. Replace `<owner>` and `<repo>` in the script with your GitHub username and repository name.
+4. Add a trigger:
+   - Set the function to `sendWebhookForAWSAlert`.
+   - Use a time-driven trigger (e.g., every 5 minutes).
+
+---
+
+### **Step 3: Set Up GitHub Repository**
+
+1. Create a GitHub repository.
+2. Add the GitHub Actions workflow file (`aws-cleanup.yml`) in the `.github/workflows/` directory, which is available in the repository.
+3. Add the cleanup script (`aws_cleanup.sh`) in your repository.
+4. Commit and push the files to GitHub.
+
+---
+
+### **Step 4: Add GitHub Secrets**
+
+In your GitHub repository:
+1. Go to **Settings** → **Secrets and Variables** → **Actions** → **New repository secret**.
+2. Add the following secrets:
+   - `AWS_ACCESS_KEY_ID`
+   - `AWS_SECRET_ACCESS_KEY`
+
+---
+
+### **Step 5: Test the Setup**
+
+1. Send a test email to your Gmail that matches the filter criteria.
+2. Verify that:
+   - The email is tagged with the label.
+   - Google Apps Script sends a webhook to GitHub.
+   - GitHub Actions executes the cleanup script.
+
 ---
 
 ## **Features**
