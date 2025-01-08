@@ -1,0 +1,26 @@
+name: AWS Cleanup Trigger
+
+on:
+  workflow_dispatch: # Allows manual triggering
+  repository_dispatch: # Triggered by external webhook
+    types: [aws-alert]
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up AWS CLI
+        uses: aws-actions/configure-aws-credentials@v3
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1 # Change as needed
+
+      - name: Run Cleanup Script
+        run: |
+          chmod +x ./aws_cleanup.sh
+          ./aws_cleanup.sh
