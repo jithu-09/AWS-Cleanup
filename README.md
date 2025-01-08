@@ -22,3 +22,23 @@ root/
 │   │   └── aws-cleanup.yml  # GitHub Actions workflow file
 ├── aws_cleanup.sh       # AWS resource cleanup script
 ├── README.md                # Documentation
+```
+
+---
+
+## **Features**
+
+Deletes EC2 instances, VPCs (excluding the default one), EKS clusters, and associated resources.
+Fully automated workflow triggered by email alerts.
+Cost-effective using free Gmail, Google Apps Script, and GitHub Actions.
+
+---
+
+---
+
+## **Limitations**
+
+Free tiers for Gmail and GitHub may have usage limits.
+Resources in AWS regions other than the configured one need manual updates in the script.
+
+---
