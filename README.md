@@ -34,7 +34,6 @@ root/
    - Apply the label: **AWS Free Tier limit alert**.
 3. Ensure AWS alert emails are correctly tagged with this label.
 
----
 
 ### **Step 2: Set Up Google Apps Script**
 
@@ -45,7 +44,6 @@ root/
    - Set the function to `sendWebhookForAWSAlert`.
    - Use a time-driven trigger (e.g., every 5 minutes).
 
----
 
 ### **Step 3: Set Up GitHub Repository**
 
@@ -54,7 +52,6 @@ root/
 3. Add the cleanup script (`aws_cleanup.sh`) in your repository.
 4. Commit and push the files to GitHub.
 
----
 
 ### **Step 4: Add GitHub Secrets**
 
@@ -64,7 +61,6 @@ In your GitHub repository:
    - `AWS_ACCESS_KEY_ID`
    - `AWS_SECRET_ACCESS_KEY`
 
----
 
 ### **Step 5: Test the Setup**
 
