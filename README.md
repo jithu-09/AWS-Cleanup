@@ -83,5 +83,3 @@ Cost-effective using free Gmail, Google Apps Script, and GitHub Actions.
 ## **Limitations**
 
 Free tiers for Gmail and GitHub may have usage limits.
-
----
