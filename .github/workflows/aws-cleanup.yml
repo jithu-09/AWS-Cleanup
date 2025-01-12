@@ -41,4 +41,4 @@ jobs:
           git commit -m "Updated cleanup log with latest run"
           git push
         env:
-          GITHUB_TOKEN: ${{ secrets.accesstoken }}
+          GITHUB_TOKEN: ${{ secrets.ACCESSTOKEN }}
