@@ -78,6 +78,16 @@ Deletes EC2 instances, VPCs (excluding the default one), EKS clusters, and assoc
 Fully automated workflow triggered by email alerts.
 Cost-effective using free Gmail, Google Apps Script, and GitHub Actions.
 
+The **`cleanup_log.txt`** file captures key actions performed during the AWS Cleanup workflow, including:
+- Terminated EC2 instances
+- Deleted VPCs
+- Deleted EKS clusters and node groups
+
+### Example Log Entry:
+```text
+Terminated EC2 instances: i-0abcd1234efgh5678 
+Deleted VPC: vpc-01abcdef234567890
+
 ---
 
 ## **Limitations**
