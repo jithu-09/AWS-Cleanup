@@ -10,17 +10,34 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Step 1: Checkout the repository
       - name: Checkout code
         uses: actions/checkout@v3
 
+      # Step 2: Configure AWS CLI
       - name: Set up AWS CLI
         uses: aws-actions/configure-aws-credentials@v3
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1 # Change as needed
 
+      # Step 3: Run the cleanup script
       - name: Run Cleanup Script
         run: |
           chmod +x ./aws_cleanup.sh
           ./aws_cleanup.sh
+
+      # Step 4: Configure Git for committing changes
+      - name: Configure Git
+        run: |
+          git config user.name "jithu-09"
+          git config user.email "k.jithu2011@gmail.com"
+
+      # Step 5: Commit changes to the log file
+      - name: Commit and Push Changes
+        run: |
+          git add cleanup_log.txt
+          git commit -m "Updated cleanup log with latest run"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
