@@ -87,8 +87,8 @@ The **`cleanup_log.txt`** file captures key actions performed during the AWS Cle
 ```text
 Terminated EC2 instances: i-0c5289b1779c104cc
 Deleted VPC: vpc-0195a6567c0bdba84 in region us-west-2
-Cleanup completed at Sun Jan 12 17:42:44 UTC 2025
-
+Cleanup completed at Sun Jan 12 17:42:44 UTC 2025 
+```
 ---
 
 ## **Limitations**
