@@ -92,6 +92,5 @@ Cleanup completed at Sun Jan 12 17:42:44 UTC 2025
 ---
 
 ## **Limitations**
-ghp_############niu2ThNd0AZaONApiT1FCeWxTYI2vY21Pubh
-ghp_@@@@@@@@@@@@tBDiwtN2eJno9puQ6S783NVvPTRj3q45oln8
+
 Free tiers for Gmail and GitHub may have usage limits.
