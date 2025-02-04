@@ -4,3 +4,5 @@ Terminated EC2 instances: i-0c5289b1779c104cc
 Deleted VPC: vpc-0195a6567c0bdba84 in region us-west-2
 Cleanup completed at Sun Jan 12 17:42:44 UTC 2025
 Cleanup completed at Tue Jan 28 05:20:11 UTC 2025
+Terminated EC2 instances: i-054bb7a88207d6a0d	i-0cfcd967dbe4b84c4
+Cleanup completed at Tue Feb  4 11:27:05 UTC 2025
