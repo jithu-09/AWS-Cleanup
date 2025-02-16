@@ -14,3 +14,5 @@ i-0250bb8ad9ecf472b
 Cleanup completed at Thu Feb  6 11:27:14 UTC 2025
 Cleanup completed at Fri Feb  7 19:11:54 UTC 2025
 Cleanup completed at Wed Feb 12 04:34:48 UTC 2025
+Terminated EC2 instances: i-0d3b49097cf222763
+Cleanup completed at Sun Feb 16 11:31:09 UTC 2025
