@@ -24,3 +24,5 @@ Terminated EC2 instances: i-0137bc3a52e156c2e
 Terminated EC2 instances: i-0742301faf8aba3f1
 Cleanup completed at Fri Mar 28 07:57:53 UTC 2025
 Cleanup completed at Fri Mar 28 08:06:11 UTC 2025
+Terminated EC2 instances: i-04dd6b160fc988a3e
+Cleanup completed at Tue Apr  8 10:50:57 UTC 2025
