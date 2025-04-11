@@ -28,3 +28,6 @@ Terminated EC2 instances: i-04dd6b160fc988a3e
 Cleanup completed at Tue Apr  8 10:50:57 UTC 2025
 Terminated EC2 instances: i-02379c49597964c45
 Cleanup completed at Wed Apr  9 09:55:15 UTC 2025
+Deleted VPC: vpc-0c4145be033f7fa13 in region us-east-1
+Deleted VPC: vpc-0a268cfbd344672d4 in region us-east-1
+Cleanup completed at Fri Apr 11 19:11:53 UTC 2025
